@@ -1,0 +1,68 @@
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 960px;
+}
+
+.main-btn (@width, @height: 38px) {
+    display: block;
+    background: @color-red;
+    text-decoration: none;
+    color: @color-white;
+    text-transform: uppercase;
+    width: @width;
+    height: @height;
+    text-align: center;
+    border-radius: 2px;
+    padding: 7px 0;
+    &:hover {
+        background: @color-d-red;
+    }
+    &:active {
+        background: @color-vey-d-red;
+    }
+    
+}
+
+.items (@bgcolor, @width: 300px, @height: 123px) {
+    background-color: @bgcolor;
+    width: @width;
+    height: @height;
+    position: relative;
+    padding: 25px;
+}
+
+.items-heading {
+    color: @color-white;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.items-spite (@x: 0, @y: 0, @width: 0, @height: 0) {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    background-image: url('../img/content-items-sprite.png');
+    background-repeat: no-repeat;
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.items-btn {
+    display: block;
+    text-align: center;
+    padding: 7px 0;
+    width: 135px;
+    height: 38px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, .1);   
+    color: @color-white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
